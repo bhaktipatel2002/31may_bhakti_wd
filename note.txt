@@ -1,0 +1,12 @@
+website :- a group of world wide web pages usually containing links to each other and made available by an individual company or organization.
+homepage :- main page of website 
+webpages :- collection of webpage
+HTML :- hyper text markup language
+css :-cascading style sheets
+javascript :- tempory store data
+jquery :- open sourced javascript library that simplifies creation and navigation of web applicatopns.
+database :- collection of data 
+SDLC :- system development lifecycle
+bootstrap :- each is used to easliy desing website 
+search engine :- a softwere program that helps people find the information they are looking for online using keywords or phrases.ex:-google  
+web-browser :- platform to run our programe.ex.-crome
