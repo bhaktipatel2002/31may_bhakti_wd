@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus</title>
+    <style>
+        fieldset{
+            background-image: url(EsteemedVigorousHuemul-max-1mb.gif);
+            width: 50%;
+            height: 50%;
+            background-size: 100% 100%;
+            color: lightcyan;
+            border-radius: 10px;      
+       }
+        fieldset:hover{
+            width: 50%;
+            height: 50%;
+            background-image: url(BigheartedHospitableCrab-size_restricted.gif);
+            cursor: wait;   
+        } 
+        input:focus{
+            background: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 5px solid lightcoral;
+        }
+        button:hover
+        {
+            background : blue;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <fieldset>
+        <legend>Registration Form</legend>
+        <form action="">
+        <label for="fnm">Name: </label>
+        <input type="text" name="fnm" id="" placeholder="Enter your full name...">
+        <br>
+        <br>
+        <label for="phon">Phone: </label>
+        <input type="tel" name="phon" id="" pattern="[0-9]{10}"  placeholder="Enter your Phone...">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="" placeholder="Enter Your Email id....">
+        <br>
+        <br>
+        <label for="password">Password: </label>
+        <input type="password" name="pass" id="" pattern="[a-z,0-9,A-B,@]{6,10}"required>
+        <br>
+        <br>
+        <label for="gender">Gender: </label>
+        male:<input type="radio" name="gen">
+        female:<input type="radio" name="gen">
+        other:<input type="radio" name="gen">
+        <br>
+        <br>
+     <button>Submit</button>
+     <button>Reset</button>
+    </form>
+    </fieldset>
+</center>
+</body>
+</html>
