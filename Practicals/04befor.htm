@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Befor</title>
+    <style>
+        body{
+            counter-reset: a;
+        }
+        h2::before{
+            content: counter(a) ".";
+            counter-increment: a;
+        }
+        h2{
+            counter-reset: b;
+        }
+        p::before{
+            content: counter(a) "."counter(b) ".";
+            counter-increment: b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Punjabi Dhaba</h1>
+    <h2>Chatpata </h2>
+        <p>panir-tika</p> 
+        <p>panir bhujiya</p> 
+        <p>panir tufani</p>
+        <p>kaju kari</p>
+        <p>panir tadka</p1>
+    <h2>Special Lassi: </h2>
+           <p>SWeet Lassi</p>
+           <p>Gulab Lassi</p> 
+           <p>Mengo Lassi</p> 
+           <p>Pista Lassi</p> 
+           <p>Dry Fruit Lassi</p>
+    <h2>Basmati Rice</h2> 
+           <p>Steem Rice</p> 
+           <p>Jeera Rice</p>
+           <p>Veg. Pulav</p> 
+           <p>Butter Pulav</p> 
+           <p>Shahi Biriyani</p>
+    <h2>Punjabi Dal</h2>
+           <p>Dal Tadka</p>
+           <p>Dal Fry</p> 
+           <p>Dal Palak</p> 
+           <p>Dal Butter</p>
+    <h2>Tandoor Se</h2> 
+           <p>Naan</p> 
+           <p>Tandoori Roti</p> 
+</body>
+</html>
