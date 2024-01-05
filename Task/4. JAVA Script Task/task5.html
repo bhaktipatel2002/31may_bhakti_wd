@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+Enter 1st value:
+    <input type="text" id="inp-1" name="1st" title="1st"><br><br>
+Enter 2nd value:
+    <input type="text" id="inp-2" name="2nd" title="2nd"><br><br>
+    <button id="btn" onclick="add()">+</button>
+    <button id="btn" onclick="subtracts()">-</button>
+    <button id="btn" onclick="muliplies()">*</button>
+    &nbsp;
+    Answer: <input type="text" id="inp-3"  name="ans" title="ans"><br><br>
+    
+    <script>
+        var inp1 = document.getElementById('inp-1');
+        var inp2 = document.getElementById('inp-2');
+        var ans = document.getElementsById('ans-3');
+        function add(){
+            console.log(inp1.value);
+            console.log(inp2.value);
+            ans.value = parseInt(inp1.value) + parseInt(inp2.value);
+        }
+        console.log(typeof(add));
+        // console.log(typeof(add));
+        function subtracts(){
+            console.log(typeof(inp1.value));
+            console.log(typeof(inp2.value));
+            ans.value = parseInt(inp1.value) - parseInt(inp2.value);
+        }
+        console.log(typeof(subtracts));
+        function muliplies(){
+            console.log(typeof(inp1.value));
+            console.log(typeof(inp2.value));
+            ans.value = parseInt(inp1.value) * parseInt(inp2.value);
+        }
+        console.log(typeof(muliplies)); 
+    </script>
+</body>
+</html>
