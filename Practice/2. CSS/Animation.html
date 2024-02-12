@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .lodding{
+            height: 400px;
+            width: 400px;
+            border: 10px solid whitesmoke;
+            border-radius: 50%;
+            animation-name: slid;
+            animation-delay: 1s;
+            /* animation-play-state: running;
+            animation-timing-function: linear;
+            animation-duration: 10s;
+            animation-iteration-count: infinite; */
+            animation: slid ease-in-out 5s 1s infinite;            
+        }
+        @keyframes slid{
+            /* from{border-color: aqua;} */
+            to{border-top-color: violet; transform: rotate(360deg);}
+            /* 10%{border-color: violet;}
+            30%{border-color: blue;}
+            50%{border-color: skyblue;}
+            80%{border-color: green;}
+            90%{border-color: yellow;}
+            100%{border-color: orange;} */
+            10%{background-image: url(STYLE/img/photos/img\ \(1\).jpeg);background-size: 100% 100%;}
+            30%{background-image:url(STYLE/img/photos/img\ \(2\).jpeg); background-size: 100% 100%;}
+            50%{background-image:url(STYLE/img/photos/img\ \(3\).jpeg); background-size: 100% 100%;}
+            80%{background-image:url(STYLE/img/photos/img\ \(4\).jpeg); background-size: 100% 100%;}
+            90%{background-image:url(STYLE/img/photos/img\ \(5\).jpeg); background-size: 100% 100%;}
+            100%{background-image:url(STYLE/img/photos/img\ \(6\).jpeg); background-size: 100% 100%;}
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="class-1">
+        <div class="lodding"></div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="class-2">
+
+
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="class-3">
+
+
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="class-4">
+
+
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="class-5">
+
+
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+</body>
+</html>

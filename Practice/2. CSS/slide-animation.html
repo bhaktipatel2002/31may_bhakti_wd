@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .animation{
+            height: 500px;
+            width: 100%;
+            border: 10px solid whitesmoke;
+            /* border-radius: 50%; */
+            animation-name: slide;
+            animation-delay: 50s;
+            /* animation-play-state: running;
+            animation-timing-function: linear;
+            animation-duration: 10s;
+            animation-iteration-count: infinite; */
+            animation: slide ease-in-out 5s 1s infinite;
+        }
+        @keyframes slide {
+            from{background-image: url(https://th.bing.com/th/id/R.9be3fc68a07b6e7fb1f8a91f79fa9710?rik=uI%2fVX0YpATXP2Q&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f1XrwP50.jpg&ehk=mRI8UOX72azzYKfgGL%2btK29Dn7XwhVAFA60iTruGX%2bs%3d&risl=&pid=ImgRaw&r=0);}
+            to{background-image: url(https://th.bing.com/th/id/OIP.If2avsNay9McvT0fM-P_NQHaEo?rs=1&pid=ImgDetMain);background-size: 100% 100%;}
+            30%{background-image: url(https://th.bing.com/th/id/OIP.etXYN_wGbMo32nIiataTAwHaFL?rs=1&pid=ImgDetMain);background-size: 100% 100%;}
+            50%{background-image: url(https://th.bing.com/th/id/OIP.ZaoL5szpOBpA4dPPycEOXQHaEh?rs=1&pid=ImgDetMain);background-size: 100% 100%;}
+            70%{background-image: url(https://th.bing.com/th/id/OIP.Hi3BtW6GeoB9kYd7H3QQVQHaEK?w=1280&h=720&rs=1&pid=ImgDetMain);background-size: 100% 100%;}
+            90%{background-image: url(https://th.bing.com/th/id/R.d3d537e6bafa689f7654a742c925ad52?rik=rmu3JEaburfnIw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f8%2fd%2f1%2f315485.jpg&ehk=FIGlMXqdgJfTrB5qFbI7M00%2f7BBNPoarwsfa%2ftd%2b0fw%3d&risl=&pid=ImgRaw&r=0);}
+            100%{background-image: url(https://th.bing.com/th/id/OIP.pxcX5wTmLpUChJO4ANbKtAHaEK?rs=1&pid=ImgDetMain);}
+        }
+    </style>
+</head>
+<body>
+    <div class="animation"></div>
+</body>
+</html>

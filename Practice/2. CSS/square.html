@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square</title>
+    <style>
+        .square{
+            height: 100px;
+            width: 100px;
+            border: 5px solid whitesmoke;
+            animation-name: square;
+            animation-delay: 1s;
+            /* animation-iteration-count: infinite; */
+            animation: square ease-in-out 5s 1s infinite;
+        }
+        @keyframes square{
+            from{background-color: rgb(255, 0, 0);transform:rotate(100deg) ;}
+            25%{filter: grayscale(10%);transform:rotate(150deg);}
+            50%{filter: grayscale(20%);transform:rotate(200deg);}
+            75%{filter: grayscale(30%);transform:rotate(250deg);}
+            to{filter: opacity(1);transform:rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="square"></div>
+    </div>
+</body>
+</html>

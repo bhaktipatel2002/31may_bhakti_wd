@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle</title>
+    <style>
+        .main{
+            height: 500px;
+            width: 500px;
+            position: relative;
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
+            /* position: absolute; */
+            border: 50px dotted green;
+            border-radius: 50%;
+            animation-name: circle;
+            animation-delay: 1s;
+            /* animation-play-state: running;
+            animation-timing-function: linear;
+            animation-duration: 10s;
+            animation-iteration-count: infinite; */
+            animation: circle ease-in-out 5s 1s infinite;
+        }
+        
+        @keyframes circle {
+                from{border-color: green;
+                transform: scale(0.1)}
+                50%{border-color: blue;
+                transform: rotate(150deg);}
+                75%{border-color: red;
+                transform: rotate(200deg);}
+                to{border-color: yellow;
+                transform: scale(-0.1);}
+                
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="main">
+        <div class="circle c-1"></div>
+    </div>
+    </center>
+</body>
+</html>
