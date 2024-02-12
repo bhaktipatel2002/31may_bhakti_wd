@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://e0.pxfuel.com/wallpapers/832/852/desktop-wallpaper-question-mark-clip-art-clip-art-on-clipart-library-cool-question-mark.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="Style Sheet/CSS-JS/format.css">
+    <title>Question - 14</title>
+</head>
+<body>
+<!----------------------------------------------HEADER------------------------------------------------------------->
+    <header>
+        <div class="logo">
+            <img src="Style Sheet/Img/tops.png" alt="" width="100%" height="200px">
+        </div>
+        <div class="contain">
+            <span><a href="Question-13.html"><i class="fa-solid fa-arrow-left"></i>Pre</a></span>
+            <span><i class="fa-solid fa-house"></i>Home</span>              
+            <span><i class="fa-solid fa-arrow-right"></i><a href="Question-15.html">Next</a></span>
+        </div>
+    </header>
+<!------------------------------------------------NAV-------------------------------------------------------------->
+    <nav>
+        <span>Question:-14 </span>What are all the types of Pop up boxes available in JavaScript?
+    </nav>
+<!----------------------------------------------SECTION------------------------------------------------------------>
+    <section>
+        <p>
+         <span>ANS:- </span><li> There are three types of pop up boxes available in JavaScript. </li>
+
+         <p>1.alert box:-
+             <li>the alert box is used to display a simple message on display. </li>
+             <li>user can read and just give <b>ok</b> response.</li>
+         </p>
+         <p>2. Confirm Box:-
+             <li>the confirm is used to get two types response <b>"OK" or "Cancel."</b></li>
+         </p>
+         <p>3. Prompt Box:-
+             <li>The prompt  is used to get input from the user. <br>
+             </li>
+         </p><br>
+         <div>
+             <li>Hear example of pop up box.</li>
+             <p><button id="b1">Alert</button> <button id="b2">Confirm</button> <button id="b3">Prompt Box</butto></p> </div>
+        </p>
+    </section>
+    <script>
+        var btn1 = document.getElementById("b1");
+        btn1.addEventListener("click", function () {
+            alert('This is alert box ');
+        });
+        var btn2 = document.getElementById("b2");
+        btn2.addEventListener("click", function () {
+            confirm('This is confrim box ');
+        });
+        var btn3 = document.getElementById("b3");
+        btn3.addEventListener("click", function () {
+            prompt('This is prompt box');
+        });
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://e0.pxfuel.com/wallpapers/832/852/desktop-wallpaper-question-mark-clip-art-clip-art-on-clipart-library-cool-question-mark.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="Style Sheet/CSS-JS/format.css">
+    <title>Question - 19</title>
+    <style>
+        .box{
+            height: 250px;
+            width: 45%;
+            line-height: 60px;
+            border: 1px solid black;
+            background: white;
+            padding: 10px;
+            color: black;
+        }
+        button{
+            height: 30px;
+            width: 30px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+<!----------------------------------------------HEADER------------------------------------------------------------->
+    <header>
+        <div class="logo">
+            <img src="Style Sheet/Img/tops.png" alt="" width="100%" height="200px">
+        </div>
+        <div class="contain">
+            <span><a href="Question-18.html"><i class="fa-solid fa-arrow-left"></i>Pre</a></span>
+            <span><i class="fa-solid fa-house"></i>Home</span>              
+            <span><i class="fa-solid fa-arrow-right"></i><a href="Question-20.html">Next</a></span>
+        </div>
+    </header>
+<!------------------------------------------------NAV-------------------------------------------------------------->
+    <nav>
+        <span>Question:- </span> Create basic math operation in JS
+
+    </nav>
+<!----------------------------------------------SECTION------------------------------------------------------------>
+    <section>
+        <p>
+         <span>ANS:- </span>
+         <div class="box">
+            <center>Maths operation</center>
+            <lable>Enter 1st value:</lable>
+    <input type="text" id="inp-1" name="1st" title="1st"><br>
+    <lable>Enter 2nd value:</lable>
+    <input type="text" id="inp-2" name="2nd" title="2nd"><br>
+    <button id="btn" onclick="add()">+</button>
+    <button id="btn" onclick="subtracts()">-</button>
+    <button id="btn" onclick="muliplies()">*</button>
+    <button id="btn" onclick="modulus()">%</button>
+    <button id="btn" onclick="divides()">/</button>
+    <!-- Answer: <input type="text" id="inp-3"  name="ans" title="ans"><br><br> -->
+    Answer: <input type="text" name="ans" id="inp-3">
+         </div>  
+        </p>
+    </section>
+    
+    <script>
+        var inp1 = document.getElementById('inp-1');
+        var inp2 = document.getElementById('inp-2');
+        var ans = document.getElementsByName('ans');
+        function add(){
+            console.log(inp1.value);
+            console.log(inp2.value);
+            ans = parseInt(inp1.value)+(inp2.value);
+        }
+        console.log(typeof(add));function add(){
+            console.log(typeof(inp1.value));
+            console.log(typeof(inp2.value));
+            ans.value = parseInt(inp1.value) + parseInt(inp2.value);
+        }
+        console.log(typeof(add));
+        // console.log(typeof(add));
+        function subtracts(){
+            console.log(typeof(inp1.value));
+            console.log(typeof(inp2.value));
+            ans.value = parseInt(inp1.value) - parseInt(inp2.value);
+        }
+        console.log(typeof(subtracts));
+        function muliplies(){
+            console.log(typeof(inp1.value));
+            console.log(typeof(inp2.value));
+            ans.value = parseInt(inp1.value) * parseInt(inp2.value);
+        }
+        console.log(typeof(muliplies));
+
+        function modulus(){
+            console.log(typeof(inp1.value));
+            console.log(typeof(inp2.value));
+            ans.value = parseInt(inp1.value) % parseInt(inp2.value);
+        }
+        console.log(typeof(modulus));
+        function divides(){
+            console.log(typeof(inp1.value));
+            console.log(typeof(inp2.value));
+            ans.value = parseInt(inp1.value) / parseInt(inp2.value);
+        }
+        console.log(typeof(divides));
+    </script>
+</body>
+</html>

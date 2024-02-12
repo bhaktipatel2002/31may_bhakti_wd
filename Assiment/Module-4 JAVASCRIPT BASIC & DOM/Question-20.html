@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://e0.pxfuel.com/wallpapers/832/852/desktop-wallpaper-question-mark-clip-art-clip-art-on-clipart-library-cool-question-mark.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="Style Sheet/CSS-JS/format.css">
+    <title>Question - 20</title>
+</head>
+<style>
+    form{
+        background-color: whitesmoke;
+        border: 1px solid black;
+        color: black;
+        padding: 30px;
+        position: relative;
+    }
+    label{
+        position: absolute;
+        left: 350px;
+    }
+    input{
+        position: absolute;
+        right:350px;
+    }
+    button{
+    margin-left: 50%;
+        height: 50px;
+        width: 100px;
+        font-weight: 400;
+        font-size: large;
+        background-color: rgb(103, 103, 244);
+        color: white;
+    }
+    /* form > div{} */
+    form > div > input{
+        /* height: 100px;
+        width: 100px; */
+    border-bottom: 1px solid black;
+    }
+
+</style>
+<body>
+<!----------------------------------------------HEADER------------------------------------------------------------->
+    <header>
+        <div class="logo">
+            <img src="Style Sheet/Img/tops.png" alt="" width="100%" height="200px">
+        </div>
+        <div class="contain">
+            <span><a href="Question-19.html"><i class="fa-solid fa-arrow-left"></i>Pre</a></span>
+            <span><i class="fa-solid fa-house"></i>Home</span>              
+            <span><i class="fa-solid fa-arrow-right"></i><a href="Question-21.html">Next</a></span>
+        </div>
+    </header>
+<!------------------------------------------------NAV-------------------------------------------------------------->
+    <nav>
+        <span>Question:- </span>Create result 
+    </nav>
+<!----------------------------------------------SECTION------------------------------------------------------------>
+    <section>
+        <p>
+            <span>ANS:- </span>
+            <form action="">
+                <center>Enter Marks</center><br>
+                <label for="1st">C Language</label>
+                <input type="text" id="inp-1" name="1st" title="1st"><br><br>
+                <label for="2nd">C++</label>
+                <input type="text" id="inp-2" name="2nd" title="2nd"><br><br>
+                <label for="3rd">Database</label>
+                <input type="text" id="inp-3" name="3rd" title="3rd"><br><br>
+                <label for="4th">HTML</label>
+                <input type="text" id="inp-4" name="4th" title="4th"><br><br>
+                <label for="5th">CSS</label>
+                <input type="text" id="inp-5" name="5th" title="5th"><br><br>
+                <label for="6th">php</label>
+                <input type="text" id="inp-6" name="6th" title="6th"><br><br>
+                <label for="7th">Core java</label>
+                <input type="text" id="inp-7" name="7th" title="7th"><br><br>
+                <button onclick="add()">Result</button><br><br>
+                <div for="total">Total is:
+                <input type="text" id="inp-8" name="total" title="total"></pinput></div>
+                <div for="Percentage">Percentage is:
+                <input type="text" id="inp-10" name="Percentage" title="Percentage"></input></div>
+            </form>
+        </p>
+        </section>
+    
+    
+    <script>
+        var inp1 = document.getElementById('inp-1');
+        var inp2 = document.getElementById('inp-2');
+        var inp3 = document.getElementById('inp-3');
+        var inp4 = document.getElementById('inp-4');
+        var inp5 = document.getElementById('inp-5');
+        var inp6 = document.getElementById('inp-6');
+        var inp7 = document.getElementById('inp-7');
+        var ans =  document.getElementById('inp-8').innerHTML;
+        var per = document.getElementById('inp-10').innerHTML;
+
+        function add(){
+            ans.value = parseInt(inp1.value) + parseInt(inp2.value) + parseInt(inp3.value) + parseInt(inp4.value) + parseInt(inp5.value) + parseInt(inp6.value) + parseInt(inp7.value);
+       
+            per.value = ans.value/350;
+        }
+        console.log(typeof(add));
+        // document.write(add);
+    </script>
+</body>
+</html>
